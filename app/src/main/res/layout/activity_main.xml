@@ -22,20 +22,24 @@
             android:orientation="vertical"
             android:padding="24dp"
             >
-            <EditText
+            <TextView
+                android:id="@+id/previousCalculationTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:textSize="20dp"
-                android:textColor="@color/white"
-                android:maxLines="1"
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:textSize="30dp"
                 android:textColor="@color/white"
                 android:maxLines="1"
+                />
+            <TextView
+                android:id="@+id/resultTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50dp"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:gravity="end"
+                android:text="0"
                 />
 
         </LinearLayout>
@@ -209,15 +213,8 @@
                 android:background="@drawable/button_equal_background"
                 />
 
-
-
-
         </GridLayout>
 
-
     </androidx.cardview.widget.CardView>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
